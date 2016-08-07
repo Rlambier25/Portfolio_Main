@@ -125,10 +125,63 @@
 	/*END OF BACKGROUND ANIMATION*/
 
 
+	/* BACKGROUND COLOR FLUX*/
+
+body {
+  background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.6));
+  background-color: #FFFA02;
+  animation: rgb 30s infinite alternate;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes rgb {
+  10% {
+    background-color: #FF6B02;
+  }
+  20% {
+    background-color: #FF0602;
+  }
+  30% {
+    background-color: #FF0289;
+  }
+  40% {
+    background-color: #BF02FF;
+  }
+  50% {
+    background-color: #022CFF;
+  }
+  60% {
+    background-color: #02BFFF;
+  }
+  70% {
+    background-color: #02FFBB;
+  }
+  80% {
+    background-color: #02FF28;
+  }
+  90% {
+    background-color: #63FF02;
+  }
+  100% {
+    background-color: #C8FF02;
+  }
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Life Savers', cursive;
+  font-size: 30pt;
+  font-weight: bold;
+  margin-top: 25%;
+  text-align: center;
+}
+
+	/* END OF BACKGROUND COLOR FLUX*/
+
+
 	body {
-		background: #33cc33; /* fallback for old browsers */
-		background: -webkit-linear-gradient(to right, #33cc33 , #005ce6); /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right, #33cc33 , #005ce6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
