@@ -7,8 +7,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-
-
 /* Basic */
 
 	@-ms-viewport {
@@ -24,8 +22,108 @@
 		html, body {
 			min-width: 320px;
 		}
-
 	}
+
+	/*BACKGROUND ANIMATION*/
+	@-webkit-keyframes backgroundAnimate {
+  from {
+    bottom: 0;
+   bottom: 0;
+  }
+  to {
+    bottom: -10000px;
+    bottom: -2000px;
+  }
+}
+
+@-moz-keyframes backgroundAnimate {
+  from {
+    left: 0;
+    top: 0;
+  }
+  to {
+    left: -10000px;
+    top: -2000px;
+  }
+}
+
+@-o-keyframes backgroundAnimate {
+  from {
+    left: 0;
+    top: 0;
+  }
+  to {
+    left: -10000px;
+    top: -2000px;
+  }
+}
+
+@keyframes backgroundAnimate {
+  from {
+    left: 0;
+    top: 0;
+  }
+  to {
+    left: -10000px;
+    top: -2000px;
+  }
+}
+
+#back {
+  background: url(http://www.tranexnet.com/img/back.png) repeat 20% 20%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+  z-index: -1;
+  -webkit-animation-name: backgroundAnimate;
+  -webkit-animation-duration: 500s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: backgroundAnimate;
+  -moz-animation-duration: 5s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-name: backgroundAnimate;
+  -o-animation-duration: 500s;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: infinite;
+  animation-name: backgroundAnimate;
+  animation-duration: 500s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#front {
+  background: url(http://www.tranexnet.com/img/front.png) repeat 35% 35%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -1;
+  -webkit-animation-name: backgroundAnimate;
+  -webkit-animation-duration: 300s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: backgroundAnimate;
+  -moz-animation-duration: 300s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-name: backgroundAnimate;
+  -o-animation-duration: 300s;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: infinite;
+  animation-name: backgroundAnimate;
+  animation-duration: 300s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+	/*END OF BACKGROUND ANIMATION*/
+
 
 	body {
 		background: #33cc33; /* fallback for old browsers */
@@ -257,6 +355,134 @@
 	hr {
 		border-bottom-color: rgba(255, 255, 255, 0.35);
 	}
+
+	/*PROJECT LIST*/
+	.list{
+		margin: auto;
+		list-style-type: none;
+	}
+	.view {
+	  margin: 10px;
+	  float: left;
+	  border: 10px solid #fff;
+	  overflow: hidden;
+	  position: relative;
+	  text-align: center;
+	  box-shadow: 1px 1px 2px #e6e6e6;
+	  cursor: default;
+	  background: #fff;
+	}
+
+	.view .mask,
+	.view .content {
+	  width: 300px;
+	  height: 200px;
+	  position: absolute;
+	  overflow: hidden;
+	  top: 0;
+	  left: 0
+	}
+
+	.view img {
+  display: block;
+  position: relative
+}
+
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  font-family: Raleway, serif;
+  padding: 10px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  margin: 20px 0 0 0
+}
+
+.view p {
+  font-family: Merriweather, serif;
+  font-style: italic;
+  font-size: 14px;
+  position: relative;
+  color: #fff;
+  padding: 0px 20px 0px;
+  text-align: center
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000
+}
+
+.view a.info:hover {
+  box-shadow: 0 0 5px #000
+}
+
+/*animation*/
+.view-tenth img {
+  transform: scaleY(1);
+  transition: all .7s ease-in-out;
+}
+
+.view-tenth .mask {
+  background-color: rgba(255, 231, 179, 0.3);
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+
+.projectImage {
+	height:200px;
+	width:300px;
+}
+
+.view-tenth h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  margin: 20px 40px 0px 40px;
+  transform: scale(0);
+  color: #333;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+
+.view-tenth p {
+  color: #333;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+  padding-
+}
+
+.view-tenth a.info {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+}
+
+.view-tenth:hover img {
+  -webkit-transform: scale(10);
+  transform: scale(10);
+  opacity: 0;
+}
+
+.view-tenth:hover .mask {
+  opacity: 1;
+}
+
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.info {
+  transform: scale(1);
+  opacity: 1;
+}
+
 
 /* Box */
 
