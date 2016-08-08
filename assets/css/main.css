@@ -43,23 +43,23 @@ body {
 
 @-o-keyframes backgroundAnimate {
 	from {
-		left: 0;
 		top: 0;
+		bottom: 0;
 	}
 	to {
-		left: -10000px;
-		top: -2000px;
+		top: -10000px;
+		bottom: -2000px;
 	}
 }
 
 @keyframes backgroundAnimate {
 	from {
-		left: 0;
 		top: 0;
+		bottom: 0;
 	}
 	to {
-		left: -10000px;
-		top: -2000px;
+		top: -10000px;
+		bottom: -2000px;
 	}
 }
 
@@ -70,7 +70,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	opacity: 1.2;
+	opacity: 1.8;
 	z-index: -1;
 	-webkit-animation-name: backgroundAnimate;
 	-webkit-animation-duration: 500s;
@@ -97,7 +97,7 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	opacity: 1.0;
+	opacity: 1.4;
 	z-index: -1;
 	-webkit-animation-name: backgroundAnimate;
 	-webkit-animation-duration: 300s;
@@ -1089,7 +1089,11 @@ input[type="radio"]:focus + label:before {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Image */
+ /*Image */
+ .journey {
+	 margin: auto;
+	 align-items: center;
+ }
 
 .image {
 	border-radius: 8px;
@@ -1871,11 +1875,11 @@ table.alt tbody tr td {
 
 @media screen and (max-width: 480px) {
 
-	#header {
+	#header .journey {
 		padding: 3em 1.5em 0.1em 1.5em ;
 	}
 
-	#header.alt {
+	#header.alt .journey{
 		padding: 4em 1.5em 1em 1.5em ;
 	}
 
@@ -1883,11 +1887,11 @@ table.alt tbody tr td {
 
 @media screen and (max-width: 360px) {
 
-	#header {
+	#header .journey{
 		padding: 2.5em 1em 0.1em 1em ;
 	}
 
-	#header.alt {
+	#header.alt .journey{
 		padding: 3.5em 1em 0.5em 1em ;
 	}
 
