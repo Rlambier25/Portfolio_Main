@@ -1,12 +1,6 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /* Basic */
 
 	@-ms-viewport {
@@ -76,7 +70,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.4;
+  opacity: 1.2;
   z-index: -1;
   -webkit-animation-name: backgroundAnimate;
   -webkit-animation-duration: 500s;
@@ -103,7 +97,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.6;
+  opacity: 1.0;
   z-index: -1;
   -webkit-animation-name: backgroundAnimate;
   -webkit-animation-duration: 300s;
@@ -143,34 +137,34 @@ body {
     background-color: #FF0602;
   }
   30% {
-    background-color: #FF0289;
+    background-color: #1a1aff;
   }
   40% {
-    background-color: #BF02FF;
+    background-color: #00b33c;
   }
   50% {
-    background-color: #022CFF;
+    background-color: #666666;
   }
   60% {
     background-color: #02BFFF;
   }
   70% {
-    background-color: #02FFBB;
+    background-color: #00cc96;
   }
   80% {
-    background-color: #02FF28;
+    background-color: #5c8a8a;
   }
   90% {
-    background-color: #63FF02;
+    background-color: #0059b3;
   }
   100% {
-    background-color: #C8FF02;
+    background-color: #a0cc00;
   }
 }
 
 h1 {
   color: #fff;
-  font-family: 'Life Savers', cursive;
+  font-family: 'Life Savers';
   font-size: 30pt;
   font-weight: bold;
   margin-top: 25%;
@@ -455,7 +449,6 @@ h1 {
 
 .view p {
   font-family: Merriweather, serif;
-  font-style: italic;
   font-size: 14px;
   position: relative;
   color: #fff;
@@ -467,7 +460,7 @@ h1 {
   display: inline-block;
   text-decoration: none;
   padding: 7px 14px;
-  background: #000;
+  background: #737373;
   color: #fff;
   font-family: Raleway, serif;
   text-transform: uppercase;
