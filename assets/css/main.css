@@ -3,6 +3,10 @@
 
 /* Basic */
 
+#arrow {
+	width: 50px;
+}
+
 @-ms-viewport {
 	width: device-width;
 }
@@ -146,19 +150,19 @@ body {
 		background-color: #666666;
 	}
 	60% {
-		background-color: #02BFFF;
+		background-color: #00ace6;
 	}
 	70% {
-		background-color: #00cc96;
+		background-color: #00cc44;
 	}
 	80% {
-		background-color: #5c8a8a;
+		background-color: #e6e600;
 	}
 	90% {
-		background-color: #0059b3;
+		background-color: #004080;
 	}
 	100% {
-		background-color: #a0cc00;
+		background-color: #6600cc;
 	}
 }
 
