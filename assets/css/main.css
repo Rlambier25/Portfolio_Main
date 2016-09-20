@@ -237,7 +237,6 @@ a {
 	-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 	transition: color 0.2s ease, border-bottom 0.2s ease;
 	text-decoration: none;
-	border-bottom: dotted 1px;
 	color: inherit;
 }
 
@@ -1911,6 +1910,65 @@ body.is-loading #header.alt .logo {
 	-ms-transform: scale(0.8) rotate(-30deg);
 	transform: scale(0.8) rotate(-30deg);
 }
+
+
+/*For Skills chart*/
+.skills {
+	float: left;
+	clear: right;
+	width: 100%;
+	margin: 20px 0px 30px 30px;
+}
+
+.skillsTop {
+	float: left;
+	clear: right;
+	width: 100%;
+	margin: 5px;
+	text-align: left;
+	font-weight: 600;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+.skillsBottom {
+	float: left;
+	clear: right;
+	width: 80%;
+	margin: 2px 0px 0px 0px;
+}
+
+.progress {
+	background:#e9e5e2;
+	height:25px;
+  -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+  -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0    #fcfcfc;
+	box-shadow: 0 1px 0px #bbbbbb inset, 0 1px 0 #fcfcfc;
+}
+
+.progress-bar {
+  background-image: -webkit-linear-gradient(left, #FF7F50 0%,
+    #FE7D7D 100%);
+  background-image: -moz-linear-gradient(left, #FF7F50 0%,
+    #FE7D7D 100%);
+  background-image: -o-linear-gradient(left, #FF7F50 0%,
+    #FE7D7D 100%);
+  background-image: linear-gradient(to right, #FF7F50 0%,
+    #FE7D7D 100%);
+	height:100%;
+	width:0%;
+}
+
+
+.android, .html, .jquery, .javascript, .java, .database, .ui, .react-native,  {
+ 	-webkit-transition: width 4.50s ease !important;
+ 	-moz-transition: width 4.50s ease !important;
+   	-o-transition: width 4.50s ease !important;
+   	transition: width 4.50s ease !important;
+ }
+
+ /*End skills chart*/
+
 
 /* Nav */
 
