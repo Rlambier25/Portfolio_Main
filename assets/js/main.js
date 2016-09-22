@@ -39,12 +39,13 @@
 		$(document).ready(function() {
 			$('.html').css('width', '90%');
 			$('.javascript').css('width', '70%');
-			$('.jquery').css('width', '65%');
+			$('.jquery').css('width', '60%');
 			$('.java').css('width', '65%');
 			$('.android').css('width', '80%');
 			$('.react-native').css('width', '40%');
-			$('.ui').css('width', '70%');
-			$('.database').css('width', '75%');
+			$('.ui').css('width', '80%');
+			$('.responsive').css('width', '70%');
+			$('.database').css('width', '65%');
 		});
 		/*END skills chart*/
 

@@ -386,7 +386,7 @@ a:hover {
 }
 
 strong, b {
-	color: #ffffff;
+	color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1983,7 +1983,7 @@ body.is-loading #header.alt .logo {
 	width: 64em;
 	max-width: calc(70%);
 	padding: 1em;
-	padding-left: 30px;
+	padding-left: 5px;
 	/*background-color: #f7f7f7;*/
 	border-top-left-radius: 0.25em;
 	border-top-right-radius: 0.25em;
@@ -2095,6 +2095,10 @@ body.is-loading #header.alt .logo {
 }
 
 /* Main */
+
+.live {
+	padding-bottom: 300px;
+}
 
 #main {
 	background-color: #ffffff;
