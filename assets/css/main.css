@@ -1972,6 +1972,7 @@ body.is-loading #header.alt .logo {
 
 /* Nav */
 
+
 #nav {
 	-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 	-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
@@ -1981,10 +1982,8 @@ body.is-loading #header.alt .logo {
 	color: #636363;
 	position: absolute;
 	width: 64em;
-	max-width: calc(70%);
-	padding: 1em;
-	padding-left: 5px;
-	/*background-color: #f7f7f7;*/
+	max-width: calc(100% - 4em);
+	background-color: #e6f7ff;
 	border-top-left-radius: 0.25em;
 	border-top-right-radius: 0.25em;
 	cursor: default;
@@ -2026,7 +2025,6 @@ body.is-loading #header.alt .logo {
 
 #nav ul {
 	margin: 0;
-	padding-left: 100px;
 	list-style: none;
 }
 
@@ -2067,7 +2065,6 @@ body.is-loading #header.alt .logo {
 #nav.alt {
 	position: fixed;
 	top: 0;
-	padding: 0.5em 1.4em;
 	background-color: rgba(255, 255, 255);
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
