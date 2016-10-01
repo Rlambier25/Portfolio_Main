@@ -433,6 +433,10 @@ hr {
 	left: 0
 }
 
+#projectScreenShots {
+	color: white;
+}
+
 .view img {
 	display: block;
 	position: relative
